@@ -1,7 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import $ from 'jquery';
-import Popper from 'popper.js';
 import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
