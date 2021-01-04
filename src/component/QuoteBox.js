@@ -1,5 +1,5 @@
 
-import { Button, Card } from 'react-bootstrap'
+import { Button, Card, Row, Col } from 'react-bootstrap'
 import React,{useEffect, useState} from 'react'
 import axios from "axios"
 const QuoteBox = () => {
@@ -17,7 +17,9 @@ const handleClick= () => {
 	})
 }
 	return (
-		<Card id="qoute-box"  style={{width:"500px"}}>
+		<Row xs={1}>
+			<Col>
+		<Card id="qoute-box"  >
 			<Card.Body className=" d-flex justify-content-center align-items-center flex-column">
 			<Card.Text id="text" className={"quote"}>{quote? quote.content:null}
 			</Card.Text>
@@ -29,6 +31,8 @@ const handleClick= () => {
 
 			</Card.Body>
 		</Card>
+		</Col>
+		</Row>
 	)
 }
 
