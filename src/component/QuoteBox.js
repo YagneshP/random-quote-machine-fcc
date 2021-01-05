@@ -26,7 +26,7 @@ const handleClick= () => {
 			<Card.Text id="author" className="__author" >{quote?quote.author:null}</Card.Text>
 			<div style={{display:"flex", justifyContent:"space-evenly", width:"100%"}}>
 			<Button as="a" href={quote?`https://twitter.com/intent/tweet?text=${quote.content} ~${quote.author}` : null} data-text={quote? quote.content : null } target="_blank"  alt="twitter" id="tweet-quote">twitter</Button>
-			 <Button id="new-quote" onClick={handleClick}>New Qoute</Button>
+			 <Button id="new-quote" onClick={handleClick}>New Quote</Button>
 			</div>
 
 			</Card.Body>
